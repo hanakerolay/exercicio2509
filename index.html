@@ -7,14 +7,39 @@
     <title>Exercícios</title>
 </head>
 <body>
-    <div>
-        <h1>Verificar Divisibilidade</h1>
-    <label for="numero">Digite um número:</label>
-    <input type="number" id="numero" name="numero">
-    <button onclick="verificarNumero()">Verificar</button>
+    <h1>Números Primos</h1>
+    <p>Digite um número para verificar se ele é ou não um número primo.</p>
+    <input type="number" id="num" placeholder="Digite um número">
+    <button type="submit" onclick="verificarNumPrimo()">Verificar</button>
+    <div id="resposta"></div>
 
+    <h1>Classificação de Atletas</h1>
+    <p>Informe a idade do atleta:</p>
+    <input type="number" id="idade" min="0" placeholder="Idade">
+    <button onclick="classificarAtleta()">Verificar</button>
     <p id="resultado"></p>
+
+    <h1>Controle de Poluição Municipal</h1>
+    <p>Informe o índice de poluição (%):</p>
+    <input type="number" id="indice" min="0" placeholder="Índice de Poluição">
+    <button onclick="verificarPoluição()">Notificar Indústrias</button>
+    <p id="resultadoPolu"></p>
+
+    <h1>Verificação de Aposentadoria</h1>
+    <input type="text" id="codigo" placeholder="Código do Empregado">
+    <input type="number" id="anoNascimento" placeholder="Ano de Nascimento">
+    <input type="number" id="anoIngresso" placeholder="Ano de Ingresso">
+    <button onclick="verificarAposentadoria()">Verificar Aposentadoria</button>
+    <p id="resultadoApo"></p>
+
+    <h1>Calculadora de Equação do Segundo Grau</h1>
+                <div class="corpo">
+                    <input type="number" id="A1" placeholder="Digite valor de A">
+                    <input type="number" id="B1" placeholder="Digite valor de B">
+                    <input type="number" id="C1" placeholder="Digite valor de C">
+                    <button type="button" class="btn btn-secondary rounded-pill" onclick="segundograu()">Calcular</button>
+                    <p id="segundograu"></p>
+                </div>
     
-    </div>
 </body>
 </html>
